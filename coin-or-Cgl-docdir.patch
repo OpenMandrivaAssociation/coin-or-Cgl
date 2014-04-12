@@ -1,0 +1,21 @@
+diff -up Cgl-0.58.5/Makefile.in.orig Cgl-0.58.5/Makefile.in
+--- Cgl-0.58.5/Makefile.in.orig	2014-01-08 13:22:38.123522362 -0200
++++ Cgl-0.58.5/Makefile.in	2014-01-08 13:23:09.068523547 -0200
+@@ -380,7 +380,7 @@ EXTRA_DIST = examples/cgl1.cpp examples/
+ ########################################################################
+ pkgconfiglibdir = $(libdir)/pkgconfig
+ pkgconfiglib_DATA = cgl.pc
+-addlibsdir = $(DESTDIR)$(datadir)/coin/doc/Cgl
++addlibsdir = $(DESTDIR)$(datadir)/doc/coin-or-$(PACKAGE_NAME)
+ 
+ ########################################################################
+ #                         Maintainer Stuff                             #
+@@ -390,7 +390,7 @@ CLEANFILES =
+ # Files that are generated and should be cleaned with make distclean
+ DISTCLEANFILES = $(am__append_3) $(VPATH_DISTCLEANFILES)
+ DocFiles = README AUTHORS LICENSE
+-DocInstallDir = $(datadir)/coin/doc/$(PACKAGE_NAME)
++DocInstallDir = $(datadir)/doc/coin-or-$(PACKAGE_NAME)
+ all: all-recursive
+ 
+ .SUFFIXES:
